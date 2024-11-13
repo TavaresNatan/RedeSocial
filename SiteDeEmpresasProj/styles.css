@@ -1,0 +1,185 @@
+/* Configuração básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddd3c3;
+    color: #5a5a5a;
+}
+
+/* Barra de Navegação Superior */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 320px 10px 20px; /* Adiciona margem à direita para evitar sobreposição com a barra lateral */
+    background-color: #d7cbb7;
+    border-bottom: 1px solid #c5b7a1;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+
+.search-bar input[type="text"] {
+    width: 30%;
+    margin-left: 37%;
+    padding: 8px;
+    text-decoration: none;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #fff;
+}
+#search_icon {
+    color: white;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #6b5a47;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.suggestions {
+    display: flex;
+    margin-left: 15px;
+    gap: 8px;
+}
+
+.suggestions .suggestion {
+    padding: 30px 30px;
+    /*background-color: #c5b7a1;*/
+    background: linear-gradient(45deg, #fff3b1, #ffacf6);
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.suggestions::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    /*background-color: #c5b7a1; /* Cor do fundo interno do botão */
+    border-radius: 6px;
+    z-index: -1;
+}
+
+/* Botões Discover e Following */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 320px 20px 20px; /* Alinha os botões com o restante do conteúdo */
+}
+
+.nav-button {
+    padding: 16px 32px;
+    background-color: white;
+    color: #222;
+    border: none;
+    border-bottom: 5px solid #cfa992;
+    border-radius: 10px;
+    border-color: #cfa992;
+    cursor: pointer;
+}
+.nav-button:hover {
+    background-color: #cfa992;
+    color: white
+}
+
+/* Ajuste do conteúdo principal para evitar sobreposição com a barra lateral */
+main {
+    display: flex;
+    margin: 20px;
+    margin-right: 320px; /* Adiciona margem para evitar que o conteúdo fique escondido atrás da barra lateral */
+}
+
+/* Posts */
+.posts_discover {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.post {
+    background-color: #ddd3c3;
+    padding: 20px;
+    margin-bottom: 20px;
+    border:none;
+    border-bottom: 2px solid white;
+
+    /*border: 2px solid #F11; para fins de teste*/
+}
+.posttittle {
+    display: flex;
+    padding: 20px;
+}
+/*Criar uma div e colocar userpostimg e userpostname para poder usar o display flex*/
+.user_post_img {
+    max-height: 40px;          
+    max-width: 40px;             
+    border-radius: 20px; 
+    /*padding-top: 10px;      
+    padding-bottom: 20px;   
+    padding-left: 20px;*/
+}
+
+.user_post_name{
+    color: #6b5a47;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.postcontent {
+    display: flex;
+    padding-left: 20px;
+}
+.user_post_text{
+    color: #6b5a47;
+}
+
+.post_basic_text {
+    color: white;
+    font-size: 0.85em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.postcontent {
+    display: flex;
+}
+.postinteractionbar {
+    padding-top:20px;
+    display: flex;
+}
+.interactionbaritems {
+    max-width: 40px;
+    max-height: 40px;
+}
+.interactiveitemscommentbar{
+    width: 30%;
+    max-height: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+}

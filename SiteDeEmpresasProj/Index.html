@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Descoberta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesLateralBar.css">
+    <link rel="stylesheet" href="stylesSugestionsBar.css">
+</head>
+<body>
+    <!-- Barra de Navegação Superior -->
+    <header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button id="search_icon">🔍︎</button>
+        </div>
+        <div class="settings-icons">
+            <span class="icon">⚙️</span>
+            <img src="profile.jpg" alt="Profile Icon" class="profile-icon">
+        </div>
+        
+    </header>
+    <p id="searchbarsugestionsp">Pesquisas recomendadas: </p>
+    <div id="searchbarsugestions"></div>
+
+    <!-- Botões Discover e Following -->
+    <div class="navigation-buttons">
+        <div class="suggestions">
+            <button class="suggestion"></button>
+            <button class="suggestion"></button>
+            <button class="suggestion"></button>
+            <button class="suggestion"></button>
+            <button class="suggestion"></button>
+        </div>
+
+        <button onclick="loadposts()" class="nav-button" >Discover</button>
+        <button class="nav-button">Following</button>
+    </div>
+
+    <!-- Conteudo Principal -->
+    <main>
+        <!-- Secao de Posts -->
+        <div id="posts_discover">
+            <script>
+                // Funcao para criar um novo post
+            </script>
+        </div>
+
+        <!-- Barra Lateral -->
+        <aside class="sidebar">
+            <div class="profile">
+                <!--<img src="profile.jpg" alt="Foto do perfil de Ana Becker">-->
+                <button class="profile_pic"></button>
+                <h3 id="profile_name">Ana Becker</h3>
+                <div id="notifications">
+                    <p id="notifications_title">🔔  Newest notifications</p>
+                </div>
+                <h1 id="natanlogo">NatanTavar LTDA 2024</h1>
+                <style>#natanlogo {color:white;font-size: 20px; padding-top: 20px;}</style>
+            </div>
+        </aside>
+    </main>
+    <script src="JScodeLoadPosts.js"></script>
+    <script src="JScodeLoadNotifications.js"></script>
+    <script src="JScodeSugestionsbar.js"></script>
+</body>
+</html>

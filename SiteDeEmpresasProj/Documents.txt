@@ -1,0 +1,30 @@
+Concept: Discover.png
+
+Fazer um site que permita empreendedores encontrarem fornecedores
+e fazer conexoes com outros empreendedores para parcerias
+
+
+<script>
+        function mostrarDiv() {
+            // Cria a div
+            const novaDiv = document.createElement("div");
+
+            // Adiciona conteúdo e estilo à div
+            novaDiv.textContent = "Esta é a div que acabou de ser criada!";
+            novaDiv.style.backgroundColor = "#f0f0f0";
+            novaDiv.style.padding = "10px";
+            novaDiv.style.marginTop = "10px";
+
+            // Adiciona a div ao corpo do documento
+            document.body.appendChild(novaDiv);
+        }
+    </script>
+
+    criar um log dia 4 (29/10/2024)
+
+QND UM USUSARIO LOGAR, TDS OS POSTS DELE DEVEM SER CARREGADOS
+DO BANCO DE DADOS PARA SEREAM MOSTRADOS NO PERFIL
+
+COLOCAR BOTAO DE POST E CHAT AO LADO DA TAG search-bar
+
+MECHER COM A BARRA DE NOTIFICACAO

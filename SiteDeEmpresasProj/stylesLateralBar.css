@@ -1,0 +1,114 @@
+/* Barra Lateral */
+.sidebar {
+    flex: 1;
+    background-color: #6b5a47;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    box-shadow: -5px 0px 8px rgba(0, 0, 0, 0.1);
+}
+#notifications {
+    background-color: #fff;
+    justify-content: center;
+    /*align-items: center;*/
+    color: #6b5a47;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 70vh;
+    width: 300px;
+    overflow: auto;
+}
+#notifications_title {
+    color: #6b5a47;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.newnotification {
+    padding-top: 20px;
+    border-bottom: 2px solid #6b5a47;
+}
+.notificationhead {
+    padding-left: 20px;
+    display: flex;
+}
+.notificationhead h1 {
+    font-size: 20px;
+}
+.notificationpic {
+    max-height: 30px;          
+    max-width: 30px;  
+}
+.newnotification h1{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.notificationcontent {
+    display: flex;
+    padding-bottom: 10px;
+}
+.notificationcontent h1 {
+    font-size: 12px;
+    color: #6b5a47; 
+}
+.notificationcontent p {
+    font-size: 12px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #6b5a47;
+}
+.profile {
+    text-align: center;
+    
+}
+.profile_pic {
+    align-items: center;
+    padding: 60px 60px;
+    /*background-color: #c5b7a1;*/
+    background-image: linear-gradient(45deg, #fff3b1, #ffacf6);
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    cursor: hand;
+}
+.profile_pic span {
+    background-color: rgb(5, 6, 45);
+    border-radius: 50%;
+    transition: 300ms;
+ }
+.profile_pic:active,
+.profile_pic:hover {
+  outline: 0;
+}
+.profile_pic:hover span {
+    background: none;
+}
+#profile_name {
+    padding: 20px;
+}
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #d7cbb7;
+}
+
+.profile h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.profile p {
+    font-size: 0.9em;
+    color: #f0e9dd;
+}

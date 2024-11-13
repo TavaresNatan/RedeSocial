@@ -1,0 +1,18 @@
+#searchbarsugestions {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#searchbarsugestionsp {
+    color:white;
+}
+.searchbarbutton {
+    padding: 3px 10px;
+    margin: 5px;
+    background-color: white;
+    color: #222;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
