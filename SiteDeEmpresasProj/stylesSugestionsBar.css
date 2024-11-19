@@ -1,3 +1,12 @@
+:root{
+    --darker-brown: #6b5a47;
+    --brighter-brown: #cfa992;
+}
+#container-searchbarsugestions{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
 #searchbarsugestions {
 
     display: flex;
@@ -5,13 +14,13 @@
     justify-content: center;
 }
 #searchbarsugestionsp {
-    color:white;
+    color:var(--darker-brown);
 }
 .searchbarbutton {
-    padding: 3px 10px;
+    padding: 6px 30px;
     margin: 5px;
     background-color: white;
-    color: #222;
+    color: var(--darker-brown);
     border: none;
     border-radius: 10px;
     cursor: pointer;

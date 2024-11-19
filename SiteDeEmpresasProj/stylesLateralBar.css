@@ -1,7 +1,11 @@
 /* Barra Lateral */
+:root{
+    --darker-brown: #6b5a47;
+    --brighter-brown: #cfa992;
+}
 .sidebar {
     flex: 1;
-    background-color: #6b5a47;
+    background-color: var(--darker-brown);
     color: white;
     display: flex;
     justify-content: center;
@@ -19,7 +23,7 @@
     background-color: #fff;
     justify-content: center;
     /*align-items: center;*/
-    color: #6b5a47;
+    color: var(--darker-brown);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: 70vh;
@@ -27,13 +31,13 @@
     overflow: auto;
 }
 #notifications_title {
-    color: #6b5a47;
+    color: var(--darker-brown);
     padding-top: 20px;
     font-size: 20px;
 }
 .newnotification {
     padding-top: 20px;
-    border-bottom: 2px solid #6b5a47;
+    border-bottom: 2px solid var(--darker-brown);
 }
 .notificationhead {
     padding-left: 20px;
@@ -56,13 +60,13 @@
 }
 .notificationcontent h1 {
     font-size: 12px;
-    color: #6b5a47; 
+    color: var(--darker-brown); 
 }
 .notificationcontent p {
     font-size: 12px;
     padding-left: 10px;
     font-weight: bold;
-    color: #6b5a47;
+    color: var(--darker-brown);
 }
 .profile {
     text-align: center;

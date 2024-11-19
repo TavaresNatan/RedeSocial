@@ -28,3 +28,13 @@ DO BANCO DE DADOS PARA SEREAM MOSTRADOS NO PERFIL
 COLOCAR BOTAO DE POST E CHAT AO LADO DA TAG search-bar
 
 MECHER COM A BARRA DE NOTIFICACAO
+
+usar nos js:
+//escreve html direto pelo script
+        const TestContainer = document.getElementById('corpo');
+
+        const content = document.createElement('div');
+        content.className = 'content';
+        content.innerHTML = `<p>This is a test</p>`;
+
+        TestContainer.appendChild(content);

@@ -4,7 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --darker-brown: #6b5a47;
+    --brighter-brown: #cfa992;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #ddd3c3;
@@ -36,14 +39,14 @@ header {
     border: none;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #fff;
+    background-color: white;
 }
 #search_icon {
     color: white;
     padding: 8px;
     padding-left: 16px;
     padding-right: 16px;
-    background-color: #6b5a47;
+    background-color: var(--darker-brown);
     border: none;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -89,15 +92,15 @@ header {
 .nav-button {
     padding: 16px 32px;
     background-color: white;
-    color: #222;
+    color: var(--darker-brown);
     border: none;
-    border-bottom: 5px solid #cfa992;
+    border-bottom: 5px solid var(--brighter-brown);
     border-radius: 10px;
-    border-color: #cfa992;
+    border-color: var(--brighter-brown);
     cursor: pointer;
 }
 .nav-button:hover {
-    background-color: #cfa992;
+    background-color: var(--brighter-brown);
     color: white
 }
 
@@ -139,7 +142,7 @@ main {
 }
 
 .user_post_name{
-    color: #6b5a47;
+    color: var(--darker-brown);
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -149,7 +152,7 @@ main {
     padding-left: 20px;
 }
 .user_post_text{
-    color: #6b5a47;
+    color: var(--darker-brown);
 }
 
 .post_basic_text {
