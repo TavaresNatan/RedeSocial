@@ -6,6 +6,9 @@
     display: flex;
     align-items: center;
     justify-content: left;
+    padding-top:10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
 }
 #searchbarsugestions {
 
@@ -14,7 +17,9 @@
     justify-content: center;
 }
 #searchbarsugestionsp {
-    color:var(--darker-brown);
+    padding-left: 50px;
+    padding-right: 10px;
+    color: white;
 }
 .searchbarbutton {
     padding: 6px 30px;
@@ -24,4 +29,8 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+.searchbarbutton:hover{
+    background-color: var(--darker-brown);
+    color: white;
 }

@@ -96,7 +96,10 @@
     background: none;
 }
 #profile_name {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
 }
 .profile img {
     width: 80px;
